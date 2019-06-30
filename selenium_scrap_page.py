@@ -47,15 +47,6 @@ def run(line,a,driver):
                 print('No further specifications!')
                 break
     f.write('\n')
-    
-    '''timings=driver.find_elements_by_css_selector("[class$=table-row__373c0__3wipe]")
-    print(timings)
-    for timing in timings:
-        timing=timings.find_element_by_css_selector("[class$=no-wrap__373c0__3qDj1 text-color--normal__373c0__K_MKN text-align--left__373c0__2pnx_]")
-        f.write(timing.text+'\n')
-        print('No further specifications!')'''
-    #timings
-    
 
     timings=driver.find_elements_by_xpath("//table[contains(@class,'hours-table')]//tr")
     for hours in timings:
@@ -146,7 +137,7 @@ def run(line,a,driver):
     
 
 if __name__=='__main__':
-    #i=0
+
     a=0
     fw=open('SanAntonio.txt','r')
     driver = webdriver.Chrome('chromedriver.exe')
