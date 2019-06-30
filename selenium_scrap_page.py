@@ -3,7 +3,7 @@
 This program takes URL page as input and creates data file for each of the restaurant listed in the URL page
 Created on Sat Nov  3 16:56:17 2018
 
-@author: Team 3
+@author: Abhishek Anand
 """
 
 from selenium import webdriver
