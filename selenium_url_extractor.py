@@ -26,7 +26,7 @@ def runforpage(line,driver):
 def run(line,pgnm,fact):
     
     #This section visits each page for the city and gathers URLs of all the restaurant
-    #i=i+1
+
     b=1
     close=False
 
@@ -52,7 +52,7 @@ def run(line,pgnm,fact):
         for i in range(1,(fact*10)+1): 
             try:
                 restLink=driver.find_element_by_xpath("""//*[@id="wrap"]/div[3]/div[2]/div[2]/div/div[1]/div[1]/div/div[1]/ul/li["""+str(i)+"""]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div[1]/h3/a""")
-                                                         #//*[@id="wrap"]/div[3]/div[2]/div[2]/div/div[1]/div[1]/div/div[1]/ul/li[9]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div[1]/h3/a     
+                                                             
                 print(restLink)
                 if restLink != []:
                     #link=restLink.find_element_by_xpath("""//*[@href]""")
