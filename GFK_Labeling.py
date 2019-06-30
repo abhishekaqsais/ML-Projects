@@ -30,9 +30,6 @@ def processSentence(terms,ngfkLex,ctr):
     fourGrams = ngrams(terms,3) #compute 2-grams    
    	 #for each 2gram
     for tg in fourGrams:
-        #if tg[0] == 'not' and tg[2] in setOfPosandNegLex and tg[3] in nounWords:
-        #if (tg[0] in ['1','2','3','4','5']) and tg[2] == 'am' and :
-         #   gfk=0
         for i in range(0,3):
             if tg[i] in  ngfkLex:
                 if ctr==1:
