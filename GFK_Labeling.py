@@ -26,7 +26,7 @@ def processSentence(terms,ngfkLex,ctr):
     #Determines whether a restaurant is good for kids or not based on certain text eg - nightlife, descrpition, availability of hard drinks etc using text mining
     result=[]
     gfk=1
-    #gfk_count=0
+
     fourGrams = ngrams(terms,3) #compute 2-grams    
    	 #for each 2gram
     for tg in fourGrams:
@@ -132,7 +132,6 @@ def loadLexicon(fname):
     #add every word in the file to the set
     for line in lex_conn:
         newLex.add(line.strip())# remember to strip to remove the lin-change character
-        #print(line.strip())
     lex_conn.close()
 
     return newLex
